@@ -1,72 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>R B T & Associates</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-}
-header{
-background:#003366;
-color:white;
-padding:20px;
-text-align:center;
-}
-section{
-padding:20px;
-}
-h2{
-color:#003366;
-}
-footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:10px;
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R B T & Associates | Chartered Accountants</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header>
-<h1>R B T & Associates</h1>
+<div class="container nav">
+<div>
+<h1>R B T & ASSOCIATES</h1>
 <p>Chartered Accountants</p>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
-<section>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<h2>Professional Tax, GST, Audit & Advisory Services</h2>
+<p>CA Ruchi Tibrewala | FCA, B.Com, LL.B, DISA (ICAI)</p>
+<a class="btn" href="#contact">Get In Touch</a>
+</div>
+<div>
+<img src="office-photo.png" alt="Office">
+</div>
+</div>
+</section>
+
+<section id="about" class="container">
 <h2>About Us</h2>
-<p>
-R B T & Associates is a Chartered Accountancy Firm providing
-GST, Income Tax, Audit, Company Law and Financial Consultancy services.
-</p>
+<p>Practicing since 2013. Established in 2017. Specialized in Direct Taxation, GST, Auditing, Company Law Matters, TDS/TCS Compliance and Business Advisory.</p>
 </section>
 
-<section>
-<h2>Our Services</h2>
-<ul>
-<li>GST Consultancy & Compliance</li>
-<li>Income Tax Return Filing</li>
-<li>Tax Audit</li>
-<li>Statutory Audit</li>
-<li>Internal Audit</li>
-<li>TDS Compliance</li>
-<li>Company Incorporation</li>
-</ul>
+<section id="services" class="container cards">
+<div class="card">Direct Taxation</div>
+<div class="card">GST Consultancy</div>
+<div class="card">Auditing & Assurance</div>
+<div class="card">Company Law Matters</div>
+<div class="card">TDS / TCS Compliance</div>
+<div class="card">Business Advisory</div>
 </section>
 
-<section>
-<h2>Contact Us</h2>
-<p>CA Ruchi Tibrewala</p>
-<p>Mumbai, Maharashtra</p>
-<p>Email: ca.rutibrewala@gmail.com</p>
+<section class="container">
+<h2>GST Calculator</h2>
+<input id="amt" type="number" placeholder="Amount">
+<input id="rate" type="number" placeholder="GST %">
+<button onclick="calc()">Calculate</button>
+<p id="result"></p>
 </section>
 
-<footer>
-© 2013 R B T & Associates
+<footer id="contact">
+<h3>Contact</h3>
+<p>7666955185</p>
+<p>ca.rutibrewala@gmail.com</p>
+<p>Goregaon West, Mumbai</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
