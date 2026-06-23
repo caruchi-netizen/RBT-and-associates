@@ -1,14 +1,464 @@
+```css
+/* =========================
+   RBT ASSOCIATES PREMIUM CSS
+========================= */
 
-body{font-family:Arial,sans-serif;margin:0;background:#f7f8fb;color:#222}
-header{background:#0b3d7a;color:#fff;padding:15px}
-.container{width:90%;max-width:1200px;margin:auto}
-.nav{display:flex;justify-content:space-between;align-items:center}
-nav a{color:white;text-decoration:none;margin-left:20px}
-.hero{padding:60px 0}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hero img{width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
-.btn{background:#0b3d7a;color:#fff;padding:12px 20px;text-decoration:none;border-radius:6px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px 0}
-.card{background:#fff;padding:30px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.08);text-align:center}
-footer{background:#0b3d7a;color:#fff;text-align:center;padding:30px;margin-top:40px}
-@media(max-width:768px){.hero-grid,.cards{grid-template-columns:1fr}}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+color:#2b2b2b;
+background:#ffffff;
+line-height:1.7;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+background:#ffffff;
+box-shadow:0 2px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:65px;
+}
+
+.brand h1{
+font-family:'Playfair Display',serif;
+font-size:38px;
+font-weight:700;
+color:#0B3D7A;
+letter-spacing:1px;
+}
+
+.brand span{
+color:#4CAF50;
+font-weight:500;
+font-size:15px;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+font-size:14px;
+font-weight:600;
+color:#222;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#0B3D7A;
+}
+
+.btn-primary{
+background:#0B3D7A;
+color:#fff;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn-primary:hover{
+background:#072f60;
+transform:translateY(-2px);
+}
+
+.btn-secondary{
+margin-left:15px;
+text-decoration:none;
+font-weight:600;
+color:#0B3D7A;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+background:
+linear-gradient(
+90deg,
+#ffffff 0%,
+#f5f8fc 100%
+);
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.small-heading{
+color:#0B3D7A;
+font-size:14px;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.hero-left h2{
+font-family:'Playfair Display',serif;
+font-size:72px;
+line-height:1.1;
+color:#0B3D7A;
+margin-bottom:10px;
+}
+
+.hero-left h3{
+font-size:34px;
+font-weight:500;
+color:#4CAF50;
+margin-bottom:25px;
+}
+
+.hero-text{
+font-size:18px;
+color:#555;
+max-width:650px;
+margin-bottom:35px;
+}
+
+.hero-features{
+display:flex;
+gap:35px;
+margin-bottom:35px;
+}
+
+.hero-features div{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+font-size:14px;
+}
+
+.hero-features i{
+font-size:34px;
+color:#0B3D7A;
+margin-bottom:10px;
+}
+
+.hero-right img{
+width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* VALUES */
+
+.values{
+padding:50px 0;
+background:#fff;
+}
+
+.value-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.value-box{
+text-align:center;
+padding:25px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.value-box:hover{
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transform:translateY(-5px);
+}
+
+.value-box i{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.value-box:nth-child(1) i{
+color:#0B3D7A;
+}
+
+.value-box:nth-child(2) i{
+color:#4CAF50;
+}
+
+.value-box:nth-child(3) i{
+color:#0B3D7A;
+}
+
+.value-box:nth-child(4) i{
+color:#F57C20;
+}
+
+.value-box h4{
+margin-bottom:10px;
+font-size:18px;
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 0;
+background:#fafafa;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.section-tag{
+color:#4CAF50;
+font-size:14px;
+font-weight:600;
+letter-spacing:2px;
+}
+
+.about h2{
+font-family:'Playfair Display',serif;
+font-size:52px;
+margin:15px 0 25px;
+color:#0B3D7A;
+}
+
+.about h2 span{
+color:#4CAF50;
+}
+
+.about p{
+margin-bottom:20px;
+color:#555;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+.profile-cards{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.profile-card{
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+flex:1;
+}
+
+.profile-card h4{
+color:#0B3D7A;
+margin-bottom:15px;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 0;
+background:#fff;
+}
+
+.center-title{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:48px;
+color:#0B3D7A;
+margin-bottom:50px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.service-card{
+background:#fff;
+padding:35px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+border-bottom:4px solid #0B3D7A;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card h4{
+color:#0B3D7A;
+font-size:20px;
+}
+
+/* GST CALCULATOR */
+
+.calculator-section{
+padding:100px 0;
+background:#f7f9fc;
+}
+
+.calculator-section h2{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:48px;
+color:#0B3D7A;
+margin-bottom:40px;
+}
+
+.gst-box{
+max-width:700px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.gst-box input,
+.gst-box select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.gst-box button{
+width:100%;
+padding:15px;
+background:#0B3D7A;
+color:#fff;
+border:none;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+#gstResult{
+margin-top:20px;
+text-align:center;
+color:#4CAF50;
+}
+
+/* CONTACT */
+
+.contact{
+padding:100px 0;
+background:#0B3D7A;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+font-family:'Playfair Display',serif;
+font-size:48px;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.hero-grid,
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.service-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.value-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-left h2{
+font-size:42px;
+}
+
+.hero-left h3{
+font-size:24px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.value-grid{
+grid-template-columns:1fr;
+}
+
+.profile-cards{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+```
